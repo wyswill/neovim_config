@@ -48,7 +48,7 @@ local UserConfig = {
 
   ---@class Commonkeys
   keys = {
-    leader_key = " ",
+    leader_key = "f",
     -- quick save / quite
     n_save = "<leader>w", -- :w
     n_force_quit = "<leader>q", -- :qa!
@@ -284,7 +284,8 @@ local UserConfig = {
     toggle_float_window_command = nil,
     toggle_side_window = "<leader>tb",
     toggle_side_window_command = nil,
-    toggle_bottom_window = "<leader>tc",
+    -- toggle_bottom_window = "<leader>tc",
+    toggle_bottom_window = "<F12>",
     toggle_bottom_window_command = nil,
   },
 
@@ -405,7 +406,7 @@ local UserConfig = {
 
   ---@class RustConfig
   rust = {
-    enable = false,
+    enable = true,
     lsp = "rust_analyzer",
     -- rustup component add rustfmt
     formatter = "rustfmt",
@@ -469,13 +470,13 @@ local UserConfig = {
 
   ---@class TomlConfig
   toml = {
-    enable = false,
+    enable = true,
     lsp = "taplo",
   },
 
   ---@class YamlConfig
   yaml = {
-    enable = false,
+    enable = true,
     lsp = "yamlls",
     ---@type "prettier" | false
     formatter = "prettier",
@@ -484,7 +485,7 @@ local UserConfig = {
 
   ---@class DockerConfig
   docker = {
-    enable = false,
+    enable = true,
     lsp = "dockerls",
   },
 

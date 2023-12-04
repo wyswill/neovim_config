@@ -18,7 +18,6 @@ end
 -- leader key
 vim.g.mapleader = keys.leader_key
 vim.g.maplocalleader = keys.leader_key
-
 -- save && quit
 keymap("n", keys.n_save, "<CMD>w<CR>")
 keymap("n", keys.n_force_quit, "<CMD>qa!<CR>")

@@ -376,5 +376,23 @@
         "body": ["afterAll(() => {", "\t${1}", "})"],
         "description": "Testing `afterAll` block",
         "scope": "typescript,typescriptreact,javascript,javascriptreact"
-    }
+    },
+ cls": {
+    "prefix": "cls",
+    "description": "log",
+    "body": [
+      "console.log('[ $1 ]===>', $1)"
+    ]
+  },
+ "格式化数据": {
+    "prefix": "stringify",
+    "body": [
+      "console.log(JSON.stringify($1, null, 2))",
+    ]
+  },
+	"自定义tscofig": {
+		"prefix": "tsconfig",
+		"body": "{\"compilerOptions\":{\"module\":\"commonjs\",\"declaration\":true,\"removeComments\":true, \"resolveJsonModule\": true,\"emitDecoratorMetadata\":true,\"experimentalDecorators\":true,\"allowSyntheticDefaultImports\":true,\"target\":\"es2017\",\"sourceMap\":false,\"outDir\":\"dist\",\"baseUrl\":\"./\",\"incremental\":true,\"esModuleInterop\":true,\"typeRoots\":[\"./src/types\",\"./node_modules/@types\"],\"paths\":{\"@src/*\":[\"./src/*\"]}},\"include\":[\"./src/**/*\"],\"exclude\":[\"node_modules\",\"release\",\"dist\",]}"
+	}
+
 }

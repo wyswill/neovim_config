@@ -1,11 +1,11 @@
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = "utf-8"
 -- jkhl padding
-vim.o.scrolloff = 8
-vim.o.sidescrolloff = 8
+vim.o.scrolloff = 10
+vim.o.sidescrolloff = 10
 -- use relative number
 vim.wo.number = true
-vim.wo.relativenumber = true
+vim.wo.relativenumber = false
 -- highlight current row /column
 vim.wo.cursorline = true
 vim.wo.cursorcolumn = false
@@ -49,7 +49,7 @@ vim.o.swapfile = false
 -- smaller updatetime
 vim.o.updatetime = 500
 -- Time in milliseconds to wait for a mapped sequence to complete.
-vim.o.timeoutlen = 500
+vim.o.timeoutlen = 700
 -- split window right and below
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -60,7 +60,7 @@ vim.opt.termguicolors = true
 vim.o.list = false
 vim.o.listchars = "space:·,tab:··"
 -- cmp
-vim.g.completeopt = "menu,menuone,noselect,noinsert"
+-- vim.g.completeopt = "menu,menuone,noselect,noinsert"
 --command-line completion is enhanced
 vim.o.wildmenu = true
 -- Dont' pass messages to |ins-completin menu|

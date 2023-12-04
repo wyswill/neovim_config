@@ -51,6 +51,9 @@ cmp.setup({
   formatting = formatting,
   sources = cmp.config.sources({
     {
+      name = "vsnip",
+    },
+    {
       name = "nvim_lsp",
       group_index = 1,
       priority = 1000,
@@ -66,7 +69,7 @@ cmp.setup({
       priority = 750,
     },
 
-    { name = "copilot", group_index = 2, priority = 750 },
+    -- { name = "copilot", group_index = 2, priority = 750 },
     {
       name = "buffer",
       group_index = 3,

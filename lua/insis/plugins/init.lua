@@ -198,6 +198,7 @@ return {
   { "saadparwaiz1/cmp_luasnip" },
   -- Completion sources
   { "hrsh7th/cmp-vsnip" },
+  { "hrsh7th/vim-vsnip-integ" },
   { "hrsh7th/cmp-nvim-lsp" }, -- { name = nvim_lsp }
   { "hrsh7th/cmp-buffer" }, -- { name = 'buffer' },
   { "hrsh7th/cmp-path" }, -- { name = 'path' }
@@ -207,10 +208,14 @@ return {
   { "rafamadriz/friendly-snippets" },
   -- UI improvement
   { "onsails/lspkind-nvim" },
-
+  -- ast-grep
+  { "ast-grep/ast-grep" },
+  -- rust
+  { "rust-lang/rust-analyzer" },
   ------------------ Code formatter -------------------------------------------
 
   -- { "mhartington/formatter.nvim" },
+  { "rust-lang/rustfmt" },
   { "jose-elias-alvarez/null-ls.nvim" },
 
   ------------------ Language enhancement -------------------------------------
@@ -279,9 +284,6 @@ return {
   -- node
   { "mxsdev/nvim-dap-vscode-js" },
 
-  -- go
-  { "leoluz/nvim-dap-go" },
-
   --[[ 
   -- TODO: python not work yet
 
@@ -296,7 +298,6 @@ return {
   --]]
 
   ----------------- neotest ---------------------------
-  { "nvim-neotest/neotest-go" },
   {
     "nvim-neotest/neotest",
     config = function()

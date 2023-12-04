@@ -21,7 +21,8 @@
                     "javascript",
                     "javascriptreact",
                     "vue",
-                    "svelte"
+                    "svelte",
+                    "json"
                 ],
                 "path": "./FE.json"
             },

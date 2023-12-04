@@ -12,6 +12,7 @@ if hlchunk then
       support_filetypes = {
         "*.lua",
         "*.js",
+        "*.ts",
       },
       chars = {
         horizontal_line = "─",

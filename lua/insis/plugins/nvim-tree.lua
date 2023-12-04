@@ -63,7 +63,7 @@ if nvimTree and cfg and cfg.enable then
       -- custom = { "node_modules" },
     },
     view = {
-      width = 34,
+      width = 50,
       -- or 'right'
       side = "left",
       number = false,
@@ -83,9 +83,9 @@ if nvimTree and cfg and cfg.enable then
       cmd = isWSL() and "wsl-open" or "open",
     },
     renderer = {
-      root_folder_label = false,
+      root_folder_label = true,
       indent_markers = {
-        enable = false,
+        enable = true,
         icons = {
           corner = "└ ",
           edge = "│ ",
